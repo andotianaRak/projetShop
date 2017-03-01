@@ -1,0 +1,35 @@
+
+
+delete  from utilisateur where 1=1;
+delete  from categorie where 1=1;
+delete  from produits where 1=1;
+delete  from achats where 1=1;
+delete  from vente where 1=1; 
+
+
+INSERT INTO utilisateur (nom,prenom,motdepasse) VALUES
+('RAKOTONDRASOA','andotiana','123456'),
+('RANDRIA','naivo','motdepasse'),
+('RAKOTOARIVO','michel','0000');
+
+INSERT INTO categorie (designation) VALUES
+('chambre a coucher'),
+('salon'),
+('salle de bain');
+
+INSERT INTO produits (idcat,nomproduit,reference,prix) VALUES
+(1,'lit deux places','A001',900000),
+(1,'table basse','A002',400000),
+(2,'tapis','A003',300000);
+
+INSERT INTO achats (idproduit,quantite,prixun,dateachat) VALUES
+(1,2,700000,'2017-02-17'),
+(2,3,150000,'2017-02-17'),
+(3,2,100000,'2017-02-17');
+
+
+INSERT INTO vente (idproduit,quantite,prixunitaire,datevente) VALUES
+(1,1,900000,'2017-02-18'),
+(3,3,300000,'2017-02-20');
+
+
